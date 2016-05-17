@@ -20,3 +20,15 @@ var a = function()
   i++;
   console.log(i);
 }
+
+
+var b = function(param1)
+{
+  //comme en php, arguments renvoi les données de function en 'tableau'
+  console.log("1",arguments);
+  console.log("2",arguments[0]);
+  console.log("3",arguments[1]);
+  console.log("4",param1);
+}
+
+//b("test");
