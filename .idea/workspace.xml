@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="060c6e38-2764-45bd-95ef-8f0fdd856fce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/node/exemple_node.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/node/exercice2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/node/data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/node/exercice3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/node/exemple_node.js" afterPath="$PROJECT_DIR$/js/node/exemple_node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/node/package.json" afterPath="$PROJECT_DIR$/js/node/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.html" afterPath="$PROJECT_DIR$/node.html" />
     </list>
     <ignored path="javascript_cours.iws" />
@@ -60,23 +62,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="node.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="234">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exemple_node.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/node/exemple_node.js">
+      <file leaf-file-name="exercice3.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/node/exercice3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="220">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding>
-                <element signature="e#0#41#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +103,11 @@
         <option value="$PROJECT_DIR$/js/node/script2.js" />
         <option value="$PROJECT_DIR$/js/node/exercice1.js" />
         <option value="$PROJECT_DIR$/js/node/exercice2.js" />
-        <option value="$PROJECT_DIR$/js/node/exemple_node.js" />
         <option value="$PROJECT_DIR$/node.html" />
+        <option value="$PROJECT_DIR$/js/node/exemple_node.js" />
+        <option value="$PROJECT_DIR$/js/node/exercice3.js" />
+        <option value="$PROJECT_DIR$/js/node/data.txt" />
+        <option value="$PROJECT_DIR$/js/node/package.json" />
       </list>
     </option>
   </component>
@@ -263,12 +268,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463486977156</updated>
-      <workItem from="1463486981150" duration="5197000" />
+      <workItem from="1463486981150" duration="6695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5197000" />
+    <option name="totallyTimeSpent" value="6695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -326,14 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/node/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/node/exercice2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -346,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/node/exemple_node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="44">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
@@ -356,9 +353,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="234">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/node/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/node/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/node/exercice3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
