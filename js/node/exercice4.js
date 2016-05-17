@@ -1,18 +1,18 @@
-// 1 - charger le fichier data.txt
-// lire le contenu
+/**
+ * Created by Ragu on 17/05/2016.
+ */
+// transformer le code
+// pour que notre programme observe le contenu du repertoire /datas
+// dÃ¨s qu'un fichier y est copiÃ©
+// le fichier est chargÃ© Ã  la facon du fichier data.txt
+// une fois que le traitement est terminÃ©
+// supprimer le fichier
 
-// 2 - afficher tous les utilisateurs dont le prenom commence
-// par L
+// indication : utilise le module "chokidar"
 
-// 3 : crÃ©er un fichier par groupe d'utilisateur
-// un groupe d'utilisateur par lettre de l'alphabet
-// A.txt -> tous les utilisateurs dont le prÃ©nom commence par A
-// B.txt -> tous les utilisateurs dont le prÃ©nom commence par B
-// ....
 
-// on a au préalable telecharger fs (npm install fs).
-// C'est un package qui permet la gestion et l'utilisation de fichiers
 var fs = require('fs');
+
 fs.readFile("data.txt", 'utf8', function(error, data){
 
     if (error)
@@ -38,7 +38,6 @@ fs.readFile("data.txt", 'utf8', function(error, data){
     {
         var letter = letters[i];
 
-
         var str = "";
 
         for (var j = 0; j < users.length; j++ )
@@ -51,11 +50,9 @@ fs.readFile("data.txt", 'utf8', function(error, data){
             }
         }
 
-
-        fs.writeFile("dossier/"+letter + ".txt", str, 'utf8', function(error){
+        fs.writeFile(letter + ".txt", str, 'utf8', function(error){
 
         });
     }
 
 });
-
