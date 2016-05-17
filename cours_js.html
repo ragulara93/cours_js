@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cours de Javascript avancé</title>
+
+    <!-- <script type="text/javascript" src="js/cours_js/cours1.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cours_js/cours2_this.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cours_js/cours3.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cours_js/cours4.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cours_js/cours5_classHtml.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cours_js/cours6_heritage.js"></script> -->
+    <!-- <script type="text/javascript" src="js/cours_js/cours7_array.js"></script> -->
+    <script type="text/javascript" src="js/cours_js/cours8_closureTemplate.js"></script>
+
+  </head>
+  <body>
+    <h2>Cours</h2>
+    <p>
+      Java et Javascript créators were friends.
+    </p>
+    <br>
+
+    <p>
+      Ces 4 déclarations de fonctions sont équivalente et ont la même performance : <br>
+      - function a() { console.log(i); }<br>
+      - this.a = function() { console.log(i); }<br>
+      - a = function() { console.log(i); }<br>
+      - var a = function() { console.log(i); }<br>
+    </p>
+    <br>
+    <p>
+      Ces 4 déclarations sont équivalente et ont la même performance :
+      - window.a = 12 <br>
+      - this.a = 12 <br>
+      - a = 12 <br>
+      - var a = 12 <br>
+    </p>
+    <br>
+    <p>
+        Les classes en JS
+        <pre>
+          (function (){
+              //code
+          })();
+        </pre>
+
+    </p>
+    <br>
+
+    <p>
+        Neutralisation de lespace global
+        <br>C'est pour éviter d'écraser une propriété de window
+        <pre>
+          function User(name, age)
+          {
+            console.log("Here",this);
+            this.name = name;
+            this.age = age;
+
+            this.bonjour = function(){
+              console.log("Bonjour! Je suis "+this.name);
+            }
+
+          }
+
+          var user = new User("James",14);
+          console.log(user);
+          user.bonjour();
+        </pre>
+    </p>
+    <br>
+
+  </body>
+</html>
