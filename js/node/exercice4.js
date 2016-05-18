@@ -50,7 +50,7 @@ fs.readFile("data.txt", 'utf8', function(error, data){
             }
         }
 
-        fs.writeFile(letter + ".txt", str, 'utf8', function(error){
+        fs.writeFile("dossier/"+letter + ".txt", str, 'utf8', function(error){
 
         });
     }

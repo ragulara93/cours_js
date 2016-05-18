@@ -9,7 +9,9 @@
   "author": "ragu",
   "license": "ISC",
   "dependencies": {
+    "chokidar": "^1.5.0",
     "fs": "0.0.2",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "mysql": "felixge/node-mysql"
   }
 }
