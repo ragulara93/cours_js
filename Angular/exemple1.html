@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="js/angular.js"></script>
+</head>
+<body ng-app="MyApp">
+
+    <coucou></coucou>
+    <br><br><br><br>
+
+    <div ng-controller="Ctrl1">
+
+        <input type="text" ng-model="search">
+        Trier par :
+        <select ng-model="tri">
+            <option value="name">Nom</option>
+            <option value="age">Age</option>
+        </select>
+        <div>
+            <ul>
+                <li ng-repeat="user in users | filter:search | orderBy:tri">{{ user.name }} - {{ user.age | age}}</li>
+            </ul>
+        </div>
+
+        <div style='display:inline-block;border:1px black solid;border-radius: 10px;padding:10px;background-color:black;color:white;'>
+            <p ng-repeat="user in users | filter:search | orderBy:tri"> {{user.name}} : {{ user.salaire | devise }}</p>
+        </div>
+
+    </div>
+
+
+
+<script>
+
+    var app = angular.module("MyApp", []);
+
+    app.controller("Ctrl1", function($scope){
+
+        $scope.users = [{name:"James", age:14, salaire:15222,},
+            {name:"Wendy", age:1, salaire: 100000,},
+            {name:"John", age:13,salaire: 21545,},
+            {name:"Fanny", age:12,salaire: 21254,},
+            {name:"Chris", age:16,salaire: 15879,},
+            {name:"Tom", age:15,salaire: 12550,}];
+
+    });
+
+    app.directive('coucou', function () {
+
+        var str="<div style='display:inline-block;border:1px black solid;border-radius: 10px;padding:5px;'>"
+                +"<h1>Coucouu</h1>"
+                +"</div>";
+
+        return {
+            restrict : 'E',
+            replace : true,
+            template : str,
+        };
+    });
+
+    app.filter("age",function () {
+       return function (input) {
+           if(input>1)
+           {
+            return input + ' ans';
+           }
+           else
+           {
+               return input + ' annee bebe';
+           }
+       };
+    });
+
+    app.filter("devise", function () {
+        return function (input)
+        {
+            return input.toLocaleString() + ' K €';
+        }
+    });
+
+</script>
+
+
+
+</body>
+</html>
