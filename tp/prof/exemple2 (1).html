@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Angular JS</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="angular.js"></script>
+    </head>
+    <body ng-app="MyApp">
+       
+    <div ng-controller="Ctrl1">
+       
+    </div>
+     
+    <script>
+       
+        var app = angular.module("MyApp", []);
+
+        app.controller("Ctrl1", function($scope, $http){
+               $http.get("http://localhost:8000/names/42").success(function(data){
+                  console.log( data ); 
+               });
+                  
+        });
+        
+        // contruire une grille avec la liste des utilisateurs dans la table student
+        // la grille doit contenir 2 colonnes
+        // - une colonne pour le nom
+        // - une colonne avec un bouton supprimer
+        
+        // lorsque l'utilisateur clique sur le bouton supprimer
+        // supprimer l'utilisateur de l'affichage
+        // supprimer l'utilisateur de la base de donnée (requete DELETE /names/id)
+        
+        
+        // RECUPERER : exercice2.html et serveur-student.html
+        
+       
+
+    </script>
+        
+    </body>
+</html>
+
+
+
+
