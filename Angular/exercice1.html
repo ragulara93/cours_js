@@ -23,7 +23,6 @@
         </ul>
     </div>
     <utilisateur ng-repeat="user in users | filter:search | orderBy:tri"></utilisateur>
-
     <!--<div style='display:inline-block;border:1px black solid;border-radius: 10px;padding:10px;background-color:black;color:white;'>
         <p ng-repeat="user in users | filter:search | orderBy:tri"> {{user.name}} : {{ user.salaire | devise }}</p>
     </div>-->
@@ -59,9 +58,9 @@
 
     app.directive('utilisateur', function () {
 
-        var str="<div style='display:inline-block;border:1px black solid;border-radius: 10px;padding:10px;background-color:black;color:white;'>"
-                +"{{user.name}} : {{user.salaire | devise}}"
-                +"</div><br><br>";
+        var str = '<div style="display:inline-block;padding:10px;border:solid 1px;background-color:black;color:white;border-radius:10px">';
+        str += '{{user.name}} : {{user.salaire | salaire}}';
+        str += '</div>';
 
         return {
             restrict : 'E',
